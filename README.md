@@ -14,7 +14,7 @@ This backend service:
 
 Connects to: `SP1WEKNK5SGNTYM0J8M34FMBM7PTRJSYRWY9C1CGR.vault-v2`
 
-Repository: [stx-vault](https://github.com/Saving-Bitcoinstx-vault)
+Repository: [stx-vault](https://github.com/Saving-Bitcoin/stx-vault)
 
 ## Events Monitored
 
