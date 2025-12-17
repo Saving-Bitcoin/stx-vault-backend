@@ -5,6 +5,7 @@ Backend webhook receiver and Chainhooks integration for the STX Vault smart cont
 ## Overview
 
 This backend service:
+
 - Receives real-time events from Hiro Chainhooks when vault contract interactions occur
 - Validates and processes blockchain events (deposits, withdrawals, counter updates)
 - Stores event data and provides API endpoints for the frontend
