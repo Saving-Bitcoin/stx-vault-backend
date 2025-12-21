@@ -74,7 +74,7 @@ async function registerChainhooks() {
     console.log(`   Total chainhooks: ${allHooks.total}`);
 
     for (const hook of allHooks.results) {
-      const status = hook.enabled ? "🟢 enabled" : "🔴 disabled";
+      const status = hook.status?.enabled ? "🟢 enabled" : "🔴 disabled";
       console.log(`   - ${hook.definition.name} (${status})`);
       console.log(`     UUID: ${hook.uuid}`);
     }
