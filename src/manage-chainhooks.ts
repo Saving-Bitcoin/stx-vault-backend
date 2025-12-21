@@ -104,9 +104,11 @@ async function main() {
         const blockArg = process.argv.find((arg) => arg === "--block");
         const blockIndex = process.argv.indexOf("--block");
         const blockHeight =
-          blockIndex !== -1 ? parseInt(process.argv[blockIndex + 1]) : null;
+          blockIndex !== -1
+            ? parseInt(process.argv[blockIndex + 1])
+            : undefined;
 
-        if (!blockHeight) {
+        if (!blockHeight || isNaN(blockHeight)) {
           console.error("❌ Error: Block height required");
           console.log(
             "Usage: npm run manage -- evaluate <uuid> --block 123456"
